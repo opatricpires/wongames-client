@@ -9,6 +9,7 @@ const GlobalStyles = createGlobalStyle`
     src: local('Poppins Light'), local('Poppins-Light'),
         url('/fonts/poppins-v12-latin-300.woff2') format('woff2');
   }
+
   @font-face {
     font-family: 'Poppins';
     font-style: normal;
@@ -17,6 +18,7 @@ const GlobalStyles = createGlobalStyle`
     src: local('Poppins Regular'), local('Poppins-Regular'),
         url('/fonts/poppins-v12-latin-regular.woff2') format('woff2');
   }
+
   @font-face {
     font-family: 'Poppins';
     font-style: normal;
@@ -39,12 +41,17 @@ const GlobalStyles = createGlobalStyle`
       font-size: 62.5%;
     }
 
+    html,
+    body,
+    #__next {
+      height: 100%;
+    }
+
     body {
-      font-family: ${theme.font.family}
-      font-size: ${theme.font.sizes.medium}
+      font-family: ${theme.font.family};
+      font-size: ${theme.font.sizes.medium};
     }
   `}
-
 `
 
 export default GlobalStyles
