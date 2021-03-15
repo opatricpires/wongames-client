@@ -1,2 +1,0 @@
-- testes pega tudo dentro da pasta SRC;
-- storybook não mostra estáticos quando geramos o build;
